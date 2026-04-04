@@ -11,7 +11,7 @@ export interface ButtonIconProps extends ButtonInternalProps {
 }
 
 export interface ButtonProps extends ButtonInternalProps {
-  children?: string | string[]
+  children?: number | number[] | string | string[]
   isIconOnly?: false
 }
 
