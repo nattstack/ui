@@ -1,4 +1,6 @@
 @theme {
+  --color-primary: var(--color-primary-9);
+
   --color-bg-primary: var(--color-bg-primary);
   --color-bg-secondary: var(--color-bg-secondary);
 
