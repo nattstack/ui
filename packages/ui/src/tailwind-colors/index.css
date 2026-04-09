@@ -1,6 +1,3 @@
 /* Order matters */
-@import "../colors/root.css";
-@import "../colors/root-p3.css";
-@import "./gray.css";
-@import "./primary.css";
+@import "../colors/index.css";
 @import "./color.css";
