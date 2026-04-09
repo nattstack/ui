@@ -14,7 +14,8 @@
   "author": "Natt <hello@natt.sh> (https://natt.sh)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nattstack/ui.git"
+    "url": "git+https://github.com/nattstack/ui.git",
+    "directory": "packages/ui"
   },
   "files": [
     "dist"
