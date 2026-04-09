@@ -1,7 +1,7 @@
 .tabs_pill_tab {
   align-items: center;
   border-radius: var(--border-radius);
-  color: var(--color-black);
+  color: black;
   column-gap: 8px;
   cursor: pointer;
   display: flex;
@@ -29,15 +29,15 @@
 
 .tabs_pill_tab[data-active] {
   background-color: transparent;
-  color: var(--color-white);
+  color: white;
 }
 
 :global(.dark) .tabs_pill_tab {
-  color: var(--color-white);
+  color: white;
 }
 
 :global(.dark) .tabs_pill_tab[data-active] {
-  color: var(--color-black);
+  color: black;
 }
 
 /* Icon size */

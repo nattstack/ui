@@ -105,7 +105,7 @@
 /* ===================================================== */
 /* Accent */
 .button__variant_accent {
-  color: var(--color-white);
+  color: white;
   background-color: var(--color-primary-9);
   background-image: linear-gradient(
     to bottom,
@@ -130,7 +130,7 @@
 
 /* Ghost */
 .button__variant_ghost {
-  color: var(--color-black);
+  color: black;
   background-color: transparent;
 }
 
@@ -141,12 +141,12 @@
 }
 
 :global(.dark) .button__variant_ghost {
-  color: var(--color-white);
+  color: white;
 }
 
 /* Primary */
 .button__variant_primary {
-  color: var(--color-white);
+  color: white;
   background-color: var(--color-gray-dark-1);
   background-image: linear-gradient(
     to bottom,
@@ -162,7 +162,7 @@
 }
 
 :global(.dark) .button__variant_primary {
-  color: var(--color-black);
+  color: black;
   background-color: var(--color-gray-light-1);
   background-image: linear-gradient(
     to bottom,
@@ -179,7 +179,7 @@
 
 /* Secondary */
 .button__variant_secondary {
-  color: var(--color-black);
+  color: black;
   background-color: var(--color-gray-2);
   background-image: linear-gradient(
     to bottom,
@@ -196,7 +196,7 @@
 }
 
 :global(.dark) .button__variant_secondary {
-  color: var(--color-white);
+  color: white;
   background-image: linear-gradient(
     to bottom,
     color-mix(in oklab, transparent 100%, #ffffff 1%) 50%,

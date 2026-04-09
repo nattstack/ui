@@ -2,10 +2,6 @@
   /* Reset ============================================= */
   --color-\*: initial;
 
-  /* White & Black ===================================== */
-  --color-white: var(--color-white);
-  --color-black: var(--color-black);
-
   /* Gray ============================================== */
   --color-gray-1: var(--color-gray-1);
   --color-gray-2: var(--color-gray-2);
