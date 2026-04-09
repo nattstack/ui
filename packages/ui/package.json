@@ -3,8 +3,10 @@
   "version": "0.0.9",
   "description": "A collection of reusable React components built with Base UI, TypeScript, and CSS Modules",
   "keywords": [
+    "base-ui",
     "components",
     "react",
+    "tailwindcss",
     "ui"
   ],
   "homepage": "https://github.com/nattstack/ui#readme",
