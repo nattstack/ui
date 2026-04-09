@@ -1,0 +1,14 @@
+:root {
+  --color-bg-primary: var(--color-gray-1);
+  --color-bg-secondary: var(--color-gray-2);
+
+  --color-border: var(--color-gray-4);
+
+  --color-text-primary: var(--color-gray-12);
+  --color-text-secondary: var(--color-gray-11);
+}
+
+.dark {
+  --color-bg-primary: var(--color-gray-2);
+  --color-bg-secondary: var(--color-gray-1);
+}

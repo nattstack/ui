@@ -15,6 +15,7 @@ export default defineConfig({
     const root = process.cwd()
     const copies = [
       ["src/colors", "dist/colors"],
+      ["src/tailwind-colors-semantic", "dist/tailwind-colors-semantic"],
       ["src/tailwind-colors", "dist/tailwind-colors"],
       ["src/tailwind-tokenless", "dist/tailwind-tokenless"],
     ]
