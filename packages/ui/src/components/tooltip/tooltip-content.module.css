@@ -1,13 +1,18 @@
 .tooltip_content {
-  background-color: var(--color-gray-1);
+  background-color: var(--color-gray-dark-1);
   border-radius: 8px;
-  border: 1px solid var(--color-gray-4);
-  color: var(--color-gray-12);
-  font-size: 14px;
+  color: var(--color-gray-dark-12);
+  font-size: 13px;
+  font-weight: 500;
   padding: 4px 8px;
 }
 
 .tooltip_content_positioner {
   isolation: isolate;
   z-index: 50;
+}
+
+:global(.dark) .tooltip_content {
+  background-color: var(--color-gray-light-1);
+  color: var(--color-gray-light-12);
 }
