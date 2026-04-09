@@ -14,7 +14,6 @@ export default defineConfig({
   onSuccess() {
     const root = process.cwd()
     const copies = [
-      ["../../README.md", "dist/README.md"],
       ["src/colors", "dist/colors"],
       ["src/tailwind-colors", "dist/tailwind-colors"],
       ["src/tailwind-tokenless", "dist/tailwind-tokenless"],
