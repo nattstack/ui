@@ -20,7 +20,7 @@
   outline-width: 0px;
   overflow: hidden;
   transition-duration: 150ms;
-  transition-property: background-color, box-shadow, opacity, translate;
+  transition-property: background-color, opacity, translate;
   user-select: none;
 }
 
