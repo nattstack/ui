@@ -30,9 +30,12 @@ import { Button } from "@nattstack/ui"
 
 function App() {
   return (
-    <body className="color-gray-slate color-primary-blue">
-      <Button>Click me</Button>
-    </body>
+    <html className="color-gray-slate color-primary-blue">
+      <head>...</head>
+      <body>
+        <Button>Click me</Button>
+      </body>
+    </html>
   )
 }
 ```
