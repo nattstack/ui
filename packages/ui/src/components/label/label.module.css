@@ -2,8 +2,8 @@
 /* Base */
 /* ===================================================== */
 .label {
-  width: fit-content;
+  color: var(--color-gray-11);
   font-size: 13px;
   font-weight: 500;
-  color: var(--color-gray-11, #646464);
+  width: fit-content;
 }
