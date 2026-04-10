@@ -15,14 +15,12 @@
     Global html defaults
     - Prevent automatic text resizing
     - Match native UI to the active color scheme
-    - Allow size interpolation for keywords such as auto
     - Disable extra gestures such as double-tap to zoom
 */
 html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   color-scheme: light dark;
-  interpolate-size: allow-keywords;
   text-size-adjust: none;
   touch-action: manipulation;
 }
