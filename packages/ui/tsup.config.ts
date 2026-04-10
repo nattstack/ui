@@ -16,7 +16,6 @@ export default defineConfig({
     const copies = [
       ["src/colors", "dist/colors"],
       ["src/tailwind-baseline", "dist/tailwind-baseline"],
-      ["src/tailwind-colors-semantic", "dist/tailwind-colors-semantic"],
       ["src/tailwind-colors", "dist/tailwind-colors"],
       ["src/tailwind-tokenless", "dist/tailwind-tokenless"],
     ]

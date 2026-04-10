@@ -1,6 +1,6 @@
 {
   "name": "@nattstack/ui",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "A collection of reusable React components built with Base UI, TypeScript, and CSS Modules",
   "keywords": [
     "base-ui",
@@ -33,7 +33,6 @@
     },
     "./colors": "./dist/colors/index.css",
     "./tailwind-baseline": "./dist/tailwind-baseline/index.css",
-    "./tailwind-colors-semantic": "./dist/tailwind-colors-semantic/index.css",
     "./tailwind-colors": "./dist/tailwind-colors/index.css",
     "./tailwind-tokenless-10": "./dist/tailwind-tokenless/10/index.css",
     "./tailwind-tokenless-16": "./dist/tailwind-tokenless/16/index.css"
