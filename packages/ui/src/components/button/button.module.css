@@ -43,7 +43,7 @@
 
 /* Icon size */
 .button > svg {
-  --size-icon: 18px;
+  --size-icon: 20px;
   height: var(--size-icon);
   width: var(--size-icon);
 }
