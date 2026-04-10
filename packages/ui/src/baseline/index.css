@@ -2,36 +2,35 @@
     Baseline
     Last updated: 2026.04.09
 
-    The goal of a reset stylesheet is to reduce browser
-    inconsistencies, improve the user experience, and
-    improve the CSS authoring experience. Assumes
-    the use of Tailwind CSS Preflight.
+    Baseline styles smooth over browser inconsistencies,
+    improve the authoring experience, and assume
+    Tailwind CSS Preflight is already in use.
 
-    Reference:
+    References:
     - https://www.joshwcomeau.com/css/custom-css-reset
     - https://piccalil.li/blog/a-more-modern-css-reset/
 // ===================================================== */
 
 /*
-    Adapt to color schemes (scrollbar color)
-*/
-:root {
-  color-scheme: light dark;
-}
-
-/*
-    (Mobile) Disable automatic text size increase
-    (Mobile) Disables additional non-standard gestures such as double-tap to zoom
+    Global html defaults
+    - Prevent automatic text resizing
+    - Match native UI to the active color scheme
+    - Allow size interpolation for keywords such as auto
+    - Disable extra gestures such as double-tap to zoom
 */
 html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
+  color-scheme: light dark;
+  interpolate-size: allow-keywords;
   text-size-adjust: none;
   touch-action: manipulation;
 }
 
 /*
-    Write comment here
+    Base typography and theme tokens
+    - Improve font rendering
+    - Set the default surface, text, and body font
 */
 body {
   -moz-osx-font-smoothing: grayscale;
@@ -39,11 +38,21 @@ body {
   -webkit-tap-highlight-color: transparent;
   background-color: var(--color-bg-secondary);
   color: var(--color-text-secondary);
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.5;
 }
 
+/*
+    Isolate elements to prevent layout shifts
+*/
+body > * {
+  isolation: isolate;
+}
+
+/*
+    On small screens, app mode uses the primary surface
+*/
 @media (max-width: 768px) {
   body[data-is-app="true"] {
     background-color: var(--color-bg-primary);
@@ -51,7 +60,7 @@ body {
 }
 
 /*
-  Write comment here
+    Apply a shared focus ring treatment to interactive controls
 */
 a,
 button {
@@ -67,7 +76,20 @@ button:focus-visible {
 }
 
 /*
-  Write comment here
+    Avoid text overflows
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+}
+
+/*
+    Default heading typography
 */
 h1,
 h2,
@@ -76,20 +98,27 @@ h4,
 h5,
 h6 {
   color: var(--color-text-primary);
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-weight: 500;
   text-wrap: balance;
 }
 
 /*
-  Write comment here
+    Improve paragraph wrapping for readability
 */
 p {
   text-wrap: pretty;
 }
 
 /*
-    (Safari mobile) Remove top inner shadow
+    Use a dedicated monospace font for code
+*/
+code {
+  font-family: var(--font-code);
+}
+
+/*
+    (Safari mobile) Remove inner shadows from form fields
 */
 input,
 textarea {
@@ -98,7 +127,7 @@ textarea {
 }
 
 /*
-    Remove input arrows
+    Hide number spin buttons in WebKit browsers
     Chrome, Safari, Edge, Opera
 */
 input::-webkit-outer-spin-button,
@@ -108,7 +137,7 @@ input::-webkit-inner-spin-button {
 }
 
 /*
-    Remove input number arrows
+    Hide number spin buttons in Firefox
 */
 input[type="number"] {
   -moz-appearance: textfield;
@@ -116,7 +145,7 @@ input[type="number"] {
 }
 
 /*
-    Respecting motion preferences
+    Respect reduced-motion preferences
     Reference: https://web.dev/articles/prefers-reduced-motion#bonus_forcing_reduced_motion_on_all_websites
 */
 @media (prefers-reduced-motion: reduce) {
@@ -133,6 +162,13 @@ input[type="number"] {
   }
 }
 
+/*
+    Debug helper for visualizing element bounds
+*/
 .d {
   border: 1px dashed red;
+}
+
+.dark .d {
+  border-color: yellow;
 }
