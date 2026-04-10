@@ -14,7 +14,6 @@
 @import "./spacing.css";
 @import "./text.css";
 
-body,
 html {
   font-size: 16px;
 }
