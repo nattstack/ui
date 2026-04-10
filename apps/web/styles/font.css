@@ -1,8 +1,6 @@
 @theme {
   --font-\*: initial;
-  --font-display: var(--font-display);
-  --font-handwriting: var(--font-handwriting);
-  --font-mono: var(--font-mono);
-  --font-sans: var(--font-sans);
-  --font-serif: var(--font-serif);
+  --font-body: var(--font-body);
+  --font-code: var(--font-code);
+  --font-heading: var(--font-heading);
 }

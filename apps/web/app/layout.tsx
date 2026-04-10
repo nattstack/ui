@@ -7,12 +7,12 @@ import { Topbar } from "@/components/topbar"
 
 const fontMono = mono({
   subsets: ["latin"],
-  variable: "--font-mono",
+  variable: "--font-code",
 })
 
 const fontSans = sans({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-body",
   weight: "variable",
 })
 

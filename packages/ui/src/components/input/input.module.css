@@ -5,7 +5,7 @@
   width: 100%;
   min-height: var(--height);
   padding: 0 12px;
-  font-family: var(--font-sans, sans-serif);
+  font-family: var(--font-body, sans-serif);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
