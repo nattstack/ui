@@ -8,7 +8,7 @@
   cursor: pointer;
   display: flex;
   flex-shrink: 0;
-  font-family: var(--font-body, sans-serif);
+  font-family: var(--font-body);
   font-size: 14px;
   font-weight: 500;
   height: var(--size-button);

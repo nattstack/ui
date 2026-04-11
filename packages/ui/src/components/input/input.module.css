@@ -2,26 +2,24 @@
 /* Base */
 /* ===================================================== */
 .input {
-  width: 100%;
-  min-height: var(--height);
-  padding: 0 12px;
-  font-family: var(--font-body, sans-serif);
+  appearance: none;
+  background-color: var(--color-bg-primary);
+  border-style: none;
+  box-shadow: 0 0 0 1px var(--color-border) inset;
+  color: var(--color-text-primary);
+  cursor: text;
+  font-family: var(--font-body);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
-  color: var(--color-gray-12);
-  text-decoration: none;
-  appearance: none;
-  cursor: text;
-  outline-width: 2px;
-  outline-style: solid;
   outline-color: transparent;
   outline-offset: -2px;
-  background-color: var(--color-bg-primary);
-  border-style: none;
-  box-shadow: 0 0 0 1px var(--color-gray-4) inset;
+  outline-style: solid;
+  outline-width: 2px;
+  text-decoration: none;
   transition-duration: 150ms;
   transition-property: box-shadow, opacity;
+  width: 100%;
 }
 
 .input::placeholder {
@@ -51,7 +49,7 @@
 
 /* Focus overrides valid and invalid */
 .input:focus-visible {
-  outline-color: var(--color-primary-9);
+  outline-color: var(--color-outline);
 }
 
 /* ===================================================== */
@@ -69,26 +67,31 @@
 /* Size */
 /* ===================================================== */
 .input__size_32 {
-  --height: 32px;
   border-radius: 8px;
+  min-height: 32px;
+  padding: 0 8px;
 }
 
 .input__size_36 {
-  --height: 36px;
   border-radius: 10px;
+  min-height: 36px;
+  padding: 0 10px;
 }
 
 .input__size_40 {
-  --height: 40px;
   border-radius: 12px;
+  min-height: 40px;
+  padding: 0 12px;
 }
 
 .input__size_44 {
-  --height: 44px;
   border-radius: 14px;
+  min-height: 44px;
+  padding: 0 14px;
 }
 
 .input__size_48 {
-  --height: 48px;
   border-radius: 16px;
+  min-height: 48px;
+  padding: 0 16px;
 }
