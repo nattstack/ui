@@ -16,8 +16,8 @@ export function TabsTheme() {
   const [theme, setTheme] = useState<Theme>(THEME.LIGHT)
 
   function onValueChange(value: Theme) {
-    globalThis.document.body.classList.remove(...Object.values(THEME))
-    globalThis.document.body.classList.add(value)
+    globalThis.document.documentElement.classList.remove(...Object.values(THEME))
+    globalThis.document.documentElement.classList.add(value)
     setTheme(value)
   }
 
