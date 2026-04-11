@@ -73,31 +73,31 @@
 .button__size_32 {
   --size-button: 32px;
   padding: 0 10px;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .button__size_36 {
   --size-button: 36px;
   padding: 0 12px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .button__size_40 {
   --size-button: 40px;
   padding: 0 14px;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .button__size_44 {
   --size-button: 44px;
   padding: 0 16px;
-  border-radius: 14px;
+  border-radius: 12px;
 }
 
 .button__size_48 {
   --size-button: 48px;
   padding: 0 18px;
-  border-radius: 16px;
+  border-radius: 14px;
 }
 
 /* ===================================================== */
