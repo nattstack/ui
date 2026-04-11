@@ -9,7 +9,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--color-gray-12, #202020);
+  color: var(--color-gray-12);
   text-decoration: none;
   appearance: none;
   cursor: text;
@@ -17,7 +17,7 @@
   outline-style: solid;
   outline-color: transparent;
   outline-offset: -2px;
-  background-color: var(--color-gray-1, #fcfcfc);
+  background-color: var(--color-bg-primary);
   border-style: none;
   box-shadow: 0 0 0 1px var(--color-gray-4) inset;
   transition-duration: 150ms;
@@ -25,7 +25,7 @@
 }
 
 .input::placeholder {
-  color: var(--color-gray-9, #8d8d8d);
+  color: var(--color-gray-9);
   user-select: none;
 }
 
@@ -51,14 +51,7 @@
 
 /* Focus overrides valid and invalid */
 .input:focus-visible {
-  outline-color: var(--color-primary-9, #e93d82);
-}
-
-/* ===================================================== */
-/* Password */
-/* ===================================================== */
-.input__password {
-  font-family: var(--font-mono, monospace);
+  outline-color: var(--color-primary-9);
 }
 
 /* ===================================================== */

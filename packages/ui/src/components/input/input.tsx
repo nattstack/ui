@@ -31,12 +31,9 @@ export function Input(props: InputProps): JSX.Element {
     ...rest
   } = props
 
-  const isPassword = type === "password"
-
   const combinedClassName = normalizeWhitespace(`
     ${INPUT_CLASS_NAME.BASE}
     ${INPUT_CLASS_NAME.SIZE[size]}
-    ${isPassword ? INPUT_CLASS_NAME.PASSWORD : ""}
     ${isRounded ? INPUT_CLASS_NAME.ROUNDED.FULL : INPUT_CLASS_NAME.ROUNDED.BASE}
     ${customClassName}
   `)
@@ -58,7 +55,6 @@ export function Input(props: InputProps): JSX.Element {
 
 export const INPUT_CLASS_NAME = {
   BASE: styles.input,
-  PASSWORD: styles.input__password,
   ROUNDED: {
     BASE: styles.input__rounded_base,
     FULL: styles.input__rounded_full,
