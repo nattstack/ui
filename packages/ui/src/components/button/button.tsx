@@ -25,7 +25,7 @@ interface ButtonInternalProps extends Omit<ComponentProps<"button">, "aria-press
   isLoading?: boolean
   isRounded?: boolean
   size?: 32 | 36 | 40 | 44 | 48
-  variant?: "accent" | "ghost" | "primary" | "secondary"
+  variant?: "ghost" | "primary" | "secondary"
 }
 
 type ButtonUnionProps = ButtonIconProps | ButtonProps
@@ -89,7 +89,6 @@ export const BUTTON_CLASS_NAME = {
     48: styles.button__size_48,
   },
   VARIANT: {
-    ACCENT: styles.button__variant_accent,
     GHOST: styles.button__variant_ghost,
     PRIMARY: styles.button__variant_primary,
     SECONDARY: styles.button__variant_secondary,

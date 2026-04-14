@@ -55,8 +55,6 @@ export default function ComboboxPage() {
       />
       <Spacer height={16} />
 
-      <Button variant="accent">Search</Button>
-      <Spacer height={16} />
       <Button variant="primary">Search</Button>
     </Column>
   )

@@ -40,7 +40,7 @@ export default function InputPage() {
       </div>
       <Spacer height={16} />
 
-      <Button iconStart={<LucideLogIn size={16} />} isFullWidth size={44} variant="accent">
+      <Button iconStart={<LucideLogIn size={16} />} isFullWidth size={44}>
         Sign in
       </Button>
       <Spacer height={64} />

@@ -103,31 +103,6 @@
 /* ===================================================== */
 /* Variant */
 /* ===================================================== */
-/* Accent */
-.button__variant_accent {
-  color: white;
-  background-color: var(--color-primary-9);
-  background-image: linear-gradient(
-    to bottom,
-    color-mix(in oklab, transparent 100%, #ffffff 5%) 50%,
-    color-mix(in oklab, transparent 100%, #ffffff 0%) 50%
-  );
-}
-
-.button__variant_accent:active:not(:disabled),
-.button__variant_accent:hover:not(:disabled),
-.button__variant_accent[aria-pressed="true"]:not(:disabled) {
-  background-color: color-mix(in oklab, var(--color-primary-9) 100%, #ffffff 10%);
-}
-
-:global(.dark) .button__variant_accent {
-  background-image: linear-gradient(
-    to bottom,
-    color-mix(in oklab, transparent 100%, #000000 0%) 50%,
-    color-mix(in oklab, transparent 100%, #000000 5%) 50%
-  );
-}
-
 /* Ghost */
 .button__variant_ghost {
   color: black;
@@ -147,10 +122,10 @@
 /* Primary */
 .button__variant_primary {
   color: white;
-  background-color: var(--color-gray-dark-1);
+  background-color: var(--color-primary-9);
   background-image: linear-gradient(
     to bottom,
-    color-mix(in oklab, transparent 100%, #ffffff 2.5%) 50%,
+    color-mix(in oklab, transparent 100%, #ffffff 5%) 50%,
     color-mix(in oklab, transparent 100%, #ffffff 0%) 50%
   );
 }
@@ -158,23 +133,15 @@
 .button__variant_primary:active:not(:disabled),
 .button__variant_primary:hover:not(:disabled),
 .button__variant_primary[aria-pressed="true"]:not(:disabled) {
-  background-color: color-mix(in oklab, var(--color-gray-dark-2) 100%, #ffffff 10%);
+  background-color: color-mix(in oklab, var(--color-primary-9) 100%, #ffffff 10%);
 }
 
 :global(.dark) .button__variant_primary {
-  color: black;
-  background-color: var(--color-gray-light-1);
   background-image: linear-gradient(
     to bottom,
     color-mix(in oklab, transparent 100%, #000000 0%) 50%,
     color-mix(in oklab, transparent 100%, #000000 5%) 50%
   );
-}
-
-:global(.dark) .button__variant_primary:active:not(:disabled),
-:global(.dark) .button__variant_primary:hover:not(:disabled),
-:global(.dark) .button__variant_primary[aria-pressed="true"]:not(:disabled) {
-  background-color: color-mix(in oklab, var(--color-gray-light-2) 100%, #000000 10%);
 }
 
 /* Secondary */

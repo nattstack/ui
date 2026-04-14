@@ -11,7 +11,7 @@ const meta = {
     size: { control: "select", options: [32, 36, 40, 48] },
     variant: {
       control: "select",
-      options: ["accent", "primary", "secondary", "ghost"],
+      options: ["primary", "secondary", "ghost"],
     },
   },
   args: { onClick: fn() },
@@ -36,13 +36,6 @@ export const Primary: Story = {
   args: {
     children: "Primary Button",
     variant: "primary",
-  },
-}
-
-export const Accent: Story = {
-  args: {
-    children: "Accent Button",
-    variant: "accent",
   },
 }
 
