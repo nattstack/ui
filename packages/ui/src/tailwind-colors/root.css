@@ -1,4 +1,5 @@
 :root {
+  --color-gray: var(--color-gray-9);
   --color-primary: var(--color-primary-9);
 
   --color-bg-primary: var(--color-gray-1);

@@ -85,7 +85,8 @@
   --color-primary-dark-12: var(--color-primary-dark-12);
 
   /* Semantic ========================================== */
-  --color-primary: var(--color-primary-9);
+  --color-gray: var(--color-gray);
+  --color-primary: var(--color-primary);
 
   --color-bg-primary: var(--color-bg-primary);
   --color-bg-secondary: var(--color-bg-secondary);
