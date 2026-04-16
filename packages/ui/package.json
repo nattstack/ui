@@ -41,7 +41,7 @@
     "build": "tsdown",
     "check:type": "tsc",
     "dev": "tsdown --watch",
-    "prepublishOnly": "bun run build",
+    "prepublishOnly": "bun install && bun run check:type && bun run build",
     "release": "bun publish"
   },
   "dependencies": {
