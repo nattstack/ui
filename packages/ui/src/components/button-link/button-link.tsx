@@ -1,6 +1,6 @@
 import { createElement, type ComponentProps, type ElementType, type JSX } from "react"
-import { BUTTON_CLASS_NAME, type ButtonProps } from "@/components/button/button"
-import { normalizeWhitespace } from "@/utils/normalize-whitespace"
+import { normalizeWhitespace } from "../../utils/normalize-whitespace"
+import { BUTTON_CLASS_NAME, type ButtonProps } from "../button/button"
 
 export type ButtonLinkProps<ComponentType extends ElementType = "a"> = ButtonLinkInternalProps &
   ComponentProps<ComponentType>

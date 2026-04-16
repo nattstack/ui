@@ -1,11 +1,11 @@
 import { Drawer as BaseDrawer } from "@base-ui/react"
 import type { JSX } from "react"
-import { DialogResponsiveBackdrop } from "@/components/dialog-responsive/dialog-responsive-backdrop"
-import { DialogResponsiveBar } from "@/components/dialog-responsive/dialog-responsive-bar"
-import { DialogResponsivePortal } from "@/components/dialog-responsive/dialog-responsive-portal"
-import { DialogResponsiveViewport } from "@/components/dialog-responsive/dialog-responsive-viewport"
-import { normalizeWhitespace } from "@/utils/normalize-whitespace"
-import styles from "@/components/dialog-responsive/dialog-responsive-popup.module.css"
+import { normalizeWhitespace } from "../../utils/normalize-whitespace"
+import { DialogResponsiveBackdrop } from "./dialog-responsive-backdrop"
+import { DialogResponsiveBar } from "./dialog-responsive-bar"
+import { DialogResponsivePortal } from "./dialog-responsive-portal"
+import { DialogResponsiveViewport } from "./dialog-responsive-viewport"
+import styles from "./dialog-responsive-popup.module.css"
 
 export interface DialogResponsivePopupProps extends BaseDrawer.Popup.Props {}
 

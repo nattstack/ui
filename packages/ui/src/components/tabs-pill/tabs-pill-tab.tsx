@@ -1,7 +1,7 @@
 import { Tabs as BaseTabs } from "@base-ui/react"
 import type { JSX } from "react"
-import { normalizeWhitespace } from "@/utils/normalize-whitespace"
-import styles from "@/components/tabs-pill/tabs-pill-tab.module.css"
+import { normalizeWhitespace } from "../../utils/normalize-whitespace"
+import styles from "./tabs-pill-tab.module.css"
 
 export interface TabsPillTabProps extends Omit<BaseTabs.Tab.Props, "nativeButton"> {
   isNativeButton?: BaseTabs.Tab.Props["nativeButton"]

@@ -5,8 +5,8 @@ import {
   type ElementType,
   type JSX,
 } from "react"
-import { normalizeWhitespace } from "@/utils/normalize-whitespace"
-import styles from "@/components/row/row.module.css"
+import { normalizeWhitespace } from "../../utils/normalize-whitespace"
+import styles from "./row.module.css"
 
 export type RowProps<ComponentType extends ElementType = "div"> = ComponentProps<ComponentType> &
   RowInternalProps

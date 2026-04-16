@@ -1,7 +1,7 @@
 import type { ComponentProps, JSX } from "react"
-import { normalizeWhitespace } from "@/utils/normalize-whitespace"
-import inputStyles from "@/components/input/input.module.css"
-import styles from "@/components/textarea/textarea.module.css"
+import { normalizeWhitespace } from "../../utils/normalize-whitespace"
+import inputStyles from "../input/input.module.css"
+import styles from "./textarea.module.css"
 
 export interface TextareaProps extends Omit<
   ComponentProps<"textarea">,

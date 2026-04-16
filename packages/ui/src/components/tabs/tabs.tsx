@@ -1,7 +1,7 @@
 import { Tabs as BaseTabs } from "@base-ui/react"
 import type { JSX } from "react"
-import { normalizeWhitespace } from "@/utils/normalize-whitespace"
-import styles from "@/components/tabs/tabs.module.css"
+import { normalizeWhitespace } from "../../utils/normalize-whitespace"
+import styles from "./tabs.module.css"
 
 export interface TabsProps extends BaseTabs.Root.Props {}
 

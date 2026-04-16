@@ -1,7 +1,7 @@
 import type { ComponentProps, JSX, ReactNode } from "react"
-import { ButtonSpinner } from "@/components/button/button-spinner"
-import { normalizeWhitespace } from "@/utils/normalize-whitespace"
-import styles from "@/components/button/button.module.css"
+import { normalizeWhitespace } from "../../utils/normalize-whitespace"
+import { ButtonSpinner } from "./button-spinner"
+import styles from "./button.module.css"
 
 export interface ButtonIconProps extends ButtonInternalProps {
   children?: ReactNode

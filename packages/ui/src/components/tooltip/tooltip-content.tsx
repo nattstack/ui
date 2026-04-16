@@ -1,7 +1,7 @@
 import { Tooltip as BaseTooltip } from "@base-ui/react"
 import type { JSX } from "react"
-import { normalizeWhitespace } from "@/utils/normalize-whitespace"
-import styles from "@/components/tooltip/tooltip-content.module.css"
+import { normalizeWhitespace } from "../../utils/normalize-whitespace"
+import styles from "./tooltip-content.module.css"
 
 export interface TooltipContentProps
   extends Pick<BaseTooltip.Positioner.Props, "side" | "sideOffset">, BaseTooltip.Popup.Props {}

@@ -1,7 +1,7 @@
 import { Switch as BaseSwitch } from "@base-ui/react"
 import type { ComponentProps, JSX } from "react"
-import { normalizeWhitespace } from "@/utils/normalize-whitespace"
-import styles from "@/components/switch/switch.module.css"
+import { normalizeWhitespace } from "../../utils/normalize-whitespace"
+import styles from "./switch.module.css"
 
 export interface SwitchProps extends Omit<
   ComponentProps<typeof BaseSwitch.Root>,

@@ -44,6 +44,7 @@ export default defineConfig({
     "eslint-plugin-import/group-exports": "allow",
     "eslint-plugin-import/no-default-export": "allow",
     "eslint-plugin-import/no-named-export": "allow",
+    "eslint-plugin-import/no-relative-parent-imports": "allow",
     "eslint-plugin-import/no-unassigned-import": "allow",
     "eslint-plugin-import/prefer-default-export": "allow",
     "eslint-plugin-import/unambiguous": "allow",

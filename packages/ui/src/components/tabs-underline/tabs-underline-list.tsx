@@ -1,8 +1,8 @@
 import { Tabs as BaseTabs } from "@base-ui/react"
 import type { JSX } from "react"
-import { TabsUnderlineIndicator } from "@/components/tabs-underline/tabs-underline-indicator"
-import { normalizeWhitespace } from "@/utils/normalize-whitespace"
-import styles from "@/components/tabs-underline/tabs-underline-list.module.css"
+import { normalizeWhitespace } from "../../utils/normalize-whitespace"
+import { TabsUnderlineIndicator } from "./tabs-underline-indicator"
+import styles from "./tabs-underline-list.module.css"
 
 export interface TabsUnderlineListProps extends BaseTabs.List.Props {}
 

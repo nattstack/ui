@@ -5,8 +5,8 @@ import {
   type ElementType,
   type JSX,
 } from "react"
-import { normalizeWhitespace } from "@/utils/normalize-whitespace"
-import styles from "@/components/column/column.module.css"
+import { normalizeWhitespace } from "../../utils/normalize-whitespace"
+import styles from "./column.module.css"
 
 export type ColumnProps<ComponentType extends ElementType = "div"> = ColumnInternalProps &
   ComponentProps<ComponentType>

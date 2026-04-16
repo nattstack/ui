@@ -1,6 +1,6 @@
 import type { ComponentProps, JSX } from "react"
-import { normalizeWhitespace } from "@/utils/normalize-whitespace"
-import styles from "@/components/label/label.module.css"
+import { normalizeWhitespace } from "../../utils/normalize-whitespace"
+import styles from "./label.module.css"
 
 export interface LabelProps extends ComponentProps<"label"> {}
 

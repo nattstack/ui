@@ -1,7 +1,7 @@
 import { Drawer as BaseDrawer } from "@base-ui/react"
 import type { JSX } from "react"
-import { normalizeWhitespace } from "@/utils/normalize-whitespace"
-import styles from "@/components/dialog-responsive/dialog-responsive-portal.module.css"
+import { normalizeWhitespace } from "../../utils/normalize-whitespace"
+import styles from "./dialog-responsive-portal.module.css"
 
 export interface DialogResponsivePortalProps extends BaseDrawer.Portal.Props {}
 

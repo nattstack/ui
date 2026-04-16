@@ -1,7 +1,7 @@
 import { Tabs as BaseTabs } from "@base-ui/react"
 import type { JSX } from "react"
-import { normalizeWhitespace } from "@/utils/normalize-whitespace"
-import styles from "@/components/tabs-underline/tabs-underline-tab.module.css"
+import { normalizeWhitespace } from "../../utils/normalize-whitespace"
+import styles from "./tabs-underline-tab.module.css"
 
 export interface TabsUnderlineTabProps extends Omit<BaseTabs.Tab.Props, "nativeButton"> {
   isNativeButton?: BaseTabs.Tab.Props["nativeButton"]

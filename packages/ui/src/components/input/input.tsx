@@ -1,6 +1,6 @@
 import type { ComponentProps, JSX } from "react"
-import { normalizeWhitespace } from "@/utils/normalize-whitespace"
-import styles from "@/components/input/input.module.css"
+import { normalizeWhitespace } from "../../utils/normalize-whitespace"
+import styles from "./input.module.css"
 
 export interface InputProps extends Omit<
   ComponentProps<"input">,

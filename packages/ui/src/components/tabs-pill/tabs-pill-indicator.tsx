@@ -1,7 +1,7 @@
 import { Tabs as BaseTabs } from "@base-ui/react"
 import type { JSX } from "react"
-import { normalizeWhitespace } from "@/utils/normalize-whitespace"
-import styles from "@/components/tabs-pill/tabs-pill-indicator.module.css"
+import { normalizeWhitespace } from "../../utils/normalize-whitespace"
+import styles from "./tabs-pill-indicator.module.css"
 
 export interface TabsPillIndicatorProps extends BaseTabs.Indicator.Props {}
 
