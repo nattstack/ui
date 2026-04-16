@@ -1,16 +1,13 @@
 import { cpSync } from "node:fs"
 import { resolve } from "node:path"
-import { defineConfig } from "tsup"
+import { defineConfig } from "tsdown"
 
 export default defineConfig({
-  clean: true,
-  dts: true,
-  entry: ["src/index.ts"],
-  external: ["react", "react-dom"],
-  format: "esm",
-  loader: {
-    ".css": "copy",
+  css: {
+    inject: true,
   },
+  entry: ["src/components/index.ts"],
+  format: "esm",
   onSuccess() {
     const root = process.cwd()
     const copies = [
@@ -30,4 +27,5 @@ export default defineConfig({
     return Promise.resolve()
   },
   outDir: "dist/components",
+  platform: "browser",
 })

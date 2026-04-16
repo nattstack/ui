@@ -3,6 +3,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev --port 3002",
+    "preview": "next start",
     "start": "next start"
   },
   "dependencies": {
