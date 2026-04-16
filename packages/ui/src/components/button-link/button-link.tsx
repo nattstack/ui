@@ -30,7 +30,7 @@ export function ButtonLink<ComponentType extends ElementType = "a">(
 
   const combinedClassName = normalizeWhitespace(`
     ${BUTTON_CLASS_NAME.BASE}
-    ${BUTTON_CLASS_NAME.SIZE[size]}
+    ${BUTTON_CLASS_NAME.SIZE[size as keyof typeof BUTTON_CLASS_NAME.SIZE]}
     ${BUTTON_CLASS_NAME.VARIANT[variant.toUpperCase() as keyof typeof BUTTON_CLASS_NAME.VARIANT]}
     ${isFullWidth ? BUTTON_CLASS_NAME.WIDTH.FULL : BUTTON_CLASS_NAME.WIDTH.BASE}
     ${isIconOnly ? BUTTON_CLASS_NAME.ICON_ONLY : ""}
