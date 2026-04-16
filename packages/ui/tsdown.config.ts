@@ -5,6 +5,9 @@ import { defineConfig } from "tsdown"
 export default defineConfig({
   css: {
     inject: true,
+    modules: {
+      generateScopedName: "[name]_[local]_[hash]",
+    },
   },
   dts: {
     build: true,
