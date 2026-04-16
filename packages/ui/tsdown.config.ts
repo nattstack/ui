@@ -21,5 +21,4 @@ export default defineConfig({
   format: "esm",
   outDir: "dist/components",
   platform: "browser",
-  sourcemap: true,
 })
