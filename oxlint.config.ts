@@ -2,6 +2,30 @@ import { defineConfig } from "oxlint"
 
 export default defineConfig({
   $schema: "./node_modules/oxlint/configuration_schema.json",
+  categories: {
+    correctness: "error",
+    nursery: "error",
+    pedantic: "error",
+    perf: "error",
+    restriction: "error",
+    style: "error",
+    suspicious: "error",
+  },
+  env: {
+    builtin: true,
+  },
+  globals: {},
+  ignorePatterns: [],
+  jsPlugins: [
+    {
+      name: "unused-imports",
+      specifier: "eslint-plugin-unused-imports",
+    },
+    {
+      name: "perfectionist",
+      specifier: "eslint-plugin-perfectionist",
+    },
+  ],
   plugins: [
     "eslint",
     "import",
@@ -14,25 +38,6 @@ export default defineConfig({
     "typescript",
     "unicorn",
   ],
-  jsPlugins: [
-    {
-      name: "unused-imports",
-      specifier: "eslint-plugin-unused-imports",
-    },
-    {
-      name: "perfectionist",
-      specifier: "eslint-plugin-perfectionist",
-    },
-  ],
-  categories: {
-    correctness: "error",
-    nursery: "error",
-    pedantic: "error",
-    perf: "error",
-    restriction: "error",
-    style: "error",
-    suspicious: "error",
-  },
   rules: {
     "eslint-plugin-import/consistent-type-specifier-style": "allow",
     "eslint-plugin-import/exports-last": "allow",
@@ -99,9 +104,4 @@ export default defineConfig({
     "typescript/no-use-before-define": "allow",
     "unused-imports/no-unused-imports": "error",
   },
-  env: {
-    builtin: true,
-  },
-  globals: {},
-  ignorePatterns: [],
 })
