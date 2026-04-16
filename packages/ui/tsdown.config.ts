@@ -1,6 +1,7 @@
 import { defineConfig } from "tsdown"
 
 export default defineConfig({
+  clean: ["dist"],
   copy: [
     { from: "src/baseline", to: "dist" },
     { from: "src/colors", to: "dist" },
@@ -20,4 +21,5 @@ export default defineConfig({
   format: "esm",
   outDir: "dist/components",
   platform: "browser",
+  sourcemap: true,
 })
