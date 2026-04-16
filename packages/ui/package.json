@@ -23,9 +23,6 @@
     "dist"
   ],
   "type": "module",
-  "main": "./dist/components/index.js",
-  "module": "./dist/components/index.js",
-  "types": "./dist/components/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/components/index.d.ts",
