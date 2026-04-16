@@ -4,6 +4,7 @@
     "apps/*",
     "packages/*"
   ],
+  "type": "module",
   "scripts": {
     "build": "turbo build",
     "check": "bun run check:format && bun run check:lint",

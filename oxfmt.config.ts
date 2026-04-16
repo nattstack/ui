@@ -1,0 +1,16 @@
+import { defineConfig } from "oxfmt"
+
+export default defineConfig({
+  $schema: "./node_modules/oxfmt/configuration_schema.json",
+  experimentalSortImports: {
+    newlinesBetween: false,
+  },
+  experimentalSortPackageJson: {
+    sortScripts: true,
+  },
+  experimentalTailwindcss: {
+    attributes: ["className"],
+  },
+  ignorePatterns: [],
+  semi: false,
+})
