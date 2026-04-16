@@ -6,6 +6,9 @@ export default defineConfig({
   css: {
     inject: true,
   },
+  dts: {
+    build: true,
+  },
   entry: ["src/components/index.ts"],
   format: "esm",
   onSuccess() {
