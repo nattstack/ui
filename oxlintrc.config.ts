@@ -1,6 +1,8 @@
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": [
+import { defineConfig } from "oxlint"
+
+export default defineConfig({
+  $schema: "./node_modules/oxlint/configuration_schema.json",
+  plugins: [
     "eslint",
     "import",
     "jsdoc",
@@ -10,28 +12,28 @@
     "react",
     "react-perf",
     "typescript",
-    "unicorn"
+    "unicorn",
   ],
-  "jsPlugins": [
+  jsPlugins: [
     {
-      "name": "unused-imports",
-      "specifier": "eslint-plugin-unused-imports"
+      name: "unused-imports",
+      specifier: "eslint-plugin-unused-imports",
     },
     {
-      "name": "perfectionist",
-      "specifier": "eslint-plugin-perfectionist"
-    }
+      name: "perfectionist",
+      specifier: "eslint-plugin-perfectionist",
+    },
   ],
-  "categories": {
-    "correctness": "error",
-    "nursery": "error",
-    "pedantic": "error",
-    "perf": "error",
-    "restriction": "error",
-    "style": "error",
-    "suspicious": "error"
+  categories: {
+    correctness: "error",
+    nursery: "error",
+    pedantic: "error",
+    perf: "error",
+    restriction: "error",
+    style: "error",
+    suspicious: "error",
   },
-  "rules": {
+  rules: {
     "eslint-plugin-import/consistent-type-specifier-style": "allow",
     "eslint-plugin-import/exports-last": "allow",
     "eslint-plugin-import/group-exports": "allow",
@@ -55,7 +57,7 @@
     "eslint-plugin-unicorn/no-nested-ternary": "allow",
     "eslint/complexity": "allow",
     "eslint/func-style": ["error", "declaration"],
-    "eslint/id-length": ["error", { "exceptions": ["_"] }],
+    "eslint/id-length": ["error", { exceptions: ["_"] }],
     "eslint/max-lines-per-function": "allow",
     "eslint/no-inline-comments": "allow",
     "eslint/no-magic-numbers": "allow",
@@ -95,40 +97,11 @@
     "typescript/no-empty-interface": "allow",
     "typescript/no-empty-object-type": "allow",
     "typescript/no-use-before-define": "allow",
-    "unused-imports/no-unused-imports": "error"
+    "unused-imports/no-unused-imports": "error",
   },
-  "settings": {
-    "jsx-a11y": {
-      "polymorphicPropName": null,
-      "components": {},
-      "attributes": {}
-    },
-    "next": {
-      "rootDir": []
-    },
-    "react": {
-      "formComponents": [],
-      "linkComponents": [],
-      "version": null,
-      "componentWrapperFunctions": []
-    },
-    "jsdoc": {
-      "ignorePrivate": false,
-      "ignoreInternal": false,
-      "ignoreReplacesDocs": true,
-      "overrideReplacesDocs": true,
-      "augmentsExtendsReplacesDocs": false,
-      "implementsReplacesDocs": false,
-      "exemptDestructuredRootsFromChecks": false,
-      "tagNamePreference": {}
-    },
-    "vitest": {
-      "typecheck": false
-    }
+  env: {
+    builtin: true,
   },
-  "env": {
-    "builtin": true
-  },
-  "globals": {},
-  "ignorePatterns": []
-}
+  globals: {},
+  ignorePatterns: [],
+})
