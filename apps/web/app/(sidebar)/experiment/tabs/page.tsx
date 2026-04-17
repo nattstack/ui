@@ -9,6 +9,8 @@ import {
 import {
   Button,
   DialogResponsive,
+  OtpInput,
+  Otp,
   DialogResponsivePopup,
   DialogResponsiveTrigger,
   Row,
@@ -25,10 +27,22 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@nattstack/ui"
+import { useId } from "react"
 
 export default function Page() {
+  const id = useId()
+  const OTP_LENGTH = 6
+
   return (
     <>
+      <Otp id={id} length={OTP_LENGTH}>
+        {Array.from({ length: OTP_LENGTH }, (_, index) => (
+          <OtpInput key={index} />
+        ))}
+      </Otp>
+
+      <Spacer height={64} />
+
       <Textarea rows={3} />
       <Spacer height={64} />
 

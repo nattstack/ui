@@ -1,0 +1,27 @@
+.otp_input {
+  background-color: var(--color-bg-primary);
+  border-radius: 14px;
+  box-shadow: 0 0 0 1px var(--color-border) inset;
+  color: var(--color-text-primary);
+  font-size: 14px;
+  height: 48px;
+  outline-color: var(--color-outline);
+  outline-offset: -2px;
+  outline-style: solid;
+  outline-width: 0;
+  text-align: center;
+  width: 40px;
+}
+
+.otp_input:enabled:hover {
+  --color-border: var(--color-gray-6);
+}
+
+.otp_input:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.otp_input:focus-visible {
+  outline-width: 2px;
+}
