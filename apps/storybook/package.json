@@ -2,8 +2,8 @@
   "name": "storybook",
   "type": "module",
   "scripts": {
-    "build": "storybook build",
-    "dev": "storybook dev --no-open --port 6007"
+    "#build": "storybook build",
+    "#dev": "storybook dev --no-open --port 6007"
   },
   "dependencies": {
     "@nattstack/ui": "workspace:*",

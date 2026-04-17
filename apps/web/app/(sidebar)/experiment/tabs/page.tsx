@@ -24,8 +24,8 @@ import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-  Passcode,
-  PasscodeInput,
+  OTPField,
+  OTPFieldInput,
 } from "@nattstack/ui"
 
 export default function Page() {
@@ -33,11 +33,11 @@ export default function Page() {
 
   return (
     <>
-      <Passcode length={OTP_LENGTH}>
+      <OTPField length={OTP_LENGTH}>
         {Array.from({ length: OTP_LENGTH }, (_, index) => (
-          <PasscodeInput key={index} />
+          <OTPFieldInput key={index} />
         ))}
-      </Passcode>
+      </OTPField>
 
       <Spacer height={64} />
 

@@ -1,6 +1,7 @@
-.passcode_input {
+.otp_field_input {
   background-color: var(--color-gray-3);
   border-radius: 14px;
+  box-shadow: 0 0 0 1px var(--color-border) inset;
   color: var(--color-text-primary);
   font-family: var(--font-body);
   font-size: 14px;
@@ -16,11 +17,15 @@
   width: 40px;
 }
 
-.passcode_input:disabled {
+.otp_field_input:enabled:hover {
+  box-shadow: 0 0 0 1px var(--color-gray-6) inset;
+}
+
+.otp_field_input:disabled {
   cursor: not-allowed;
   opacity: 0.5;
 }
 
-.passcode_input:focus-visible {
+.otp_field_input:focus-visible {
   outline-width: 2px;
 }
