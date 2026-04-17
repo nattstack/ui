@@ -3,19 +3,17 @@ import type { JSX } from "react"
 import { normalizeWhitespace } from "../../utils/normalize-whitespace"
 import styles from "./otp-field-input.module.css"
 
-interface OTPFieldInputProps extends Omit<OTPFieldBase.Input.Props, "disabled"> {
-  isDisabled?: OTPFieldBase.Input.Props["disabled"]
-}
+interface OTPFieldInputProps extends OTPFieldBase.Input.Props {}
 
 export function OTPFieldInput(props: OTPFieldInputProps): JSX.Element {
-  const { className: customClassName = "", isDisabled = false, ...rest } = props
+  const { className: customClassName = "", ...rest } = props
 
   const combinedClassName = normalizeWhitespace(`
     ${OTP_FIELD_INPUT_CLASS_NAME.BASE}
     ${customClassName}
   `)
 
-  return <OTPFieldBase.Input className={combinedClassName} disabled={isDisabled} {...rest} />
+  return <OTPFieldBase.Input className={combinedClassName} {...rest} />
 }
 
 export const OTP_FIELD_INPUT_CLASS_NAME = {
