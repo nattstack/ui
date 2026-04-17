@@ -13,6 +13,7 @@ export function OTPField(props: OTPFieldProps): JSX.Element {
 
   const combinedClassName = normalizeWhitespace(`
     ${OTP_FIELD_CLASS_NAME.BASE}
+    ${isMasked ? OTP_FIELD_CLASS_NAME.MASKED : ""}
     ${customClassName}
   `)
 
@@ -28,4 +29,5 @@ export function OTPField(props: OTPFieldProps): JSX.Element {
 
 export const OTP_FIELD_CLASS_NAME = {
   BASE: styles.otp_field,
+  MASKED: styles.otp_field__masked,
 } as const

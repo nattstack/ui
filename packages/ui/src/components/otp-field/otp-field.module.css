@@ -5,3 +5,7 @@
   justify-content: center;
   width: fit-content;
 }
+
+.otp_field__masked > input {
+  font-family: var(--font-code);
+}
