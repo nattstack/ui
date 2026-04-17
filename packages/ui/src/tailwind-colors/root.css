@@ -10,6 +10,10 @@
 
   --color-text-primary: var(--color-gray-12);
   --color-text-secondary: var(--color-gray-11);
+
+  --color-success: var(--color-primitive-green-9);
+  --color-warning: var(--color-primitive-yellow-9);
+  --color-error: var(--color-primitive-red-9);
 }
 
 .dark {
