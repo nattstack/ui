@@ -1,10 +1,9 @@
 .passcode_input {
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-gray-3);
   border-radius: 14px;
-  box-shadow: 0 0 0 1px var(--color-border) inset;
   color: var(--color-text-primary);
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   height: 48px;
   outline-color: var(--color-outline);
@@ -15,10 +14,6 @@
   transition-duration: 150ms;
   transition-property: box-shadow;
   width: 40px;
-}
-
-.passcode_input:enabled:hover {
-  --color-border: var(--color-gray-6);
 }
 
 .passcode_input:disabled {
