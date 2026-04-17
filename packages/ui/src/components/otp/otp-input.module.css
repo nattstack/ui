@@ -10,6 +10,8 @@
   outline-style: solid;
   outline-width: 0;
   text-align: center;
+  transition-duration: 150ms;
+  transition-property: box-shadow;
   width: 40px;
 }
 
