@@ -9,8 +9,6 @@ import {
 import {
   Button,
   DialogResponsive,
-  OtpInput,
-  Otp,
   DialogResponsivePopup,
   DialogResponsiveTrigger,
   Row,
@@ -26,20 +24,20 @@ import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
+  Passcode,
+  PasscodeInput,
 } from "@nattstack/ui"
-import { useId } from "react"
 
 export default function Page() {
-  const id = useId()
   const OTP_LENGTH = 6
 
   return (
     <>
-      <Otp id={id} length={OTP_LENGTH}>
+      <Passcode length={OTP_LENGTH}>
         {Array.from({ length: OTP_LENGTH }, (_, index) => (
-          <OtpInput key={index} />
+          <PasscodeInput key={index} />
         ))}
-      </Otp>
+      </Passcode>
 
       <Spacer height={64} />
 
