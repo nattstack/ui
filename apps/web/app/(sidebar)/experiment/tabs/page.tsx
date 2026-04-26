@@ -11,6 +11,18 @@ import {
   DialogResponsive,
   DialogResponsivePopup,
   DialogResponsiveTrigger,
+  Menu,
+  MenuCheckboxItem,
+  MenuContent,
+  MenuGroup,
+  MenuGroupLabel,
+  MenuItem,
+  MenuRadioGroup,
+  MenuRadioItem,
+  MenuSeparator,
+  MenuSubmenu,
+  MenuSubmenuTrigger,
+  MenuTrigger,
   Row,
   Spacer,
   Switch,
@@ -33,6 +45,39 @@ export default function Page() {
 
   return (
     <>
+      <Menu>
+        <MenuTrigger>Open menu</MenuTrigger>
+        <MenuContent>
+          <MenuGroup>
+            <MenuGroupLabel>Actions</MenuGroupLabel>
+            <MenuItem>New tab</MenuItem>
+            <MenuItem>Duplicate tab</MenuItem>
+            <MenuItem isDisabled>Rename tab</MenuItem>
+          </MenuGroup>
+          <MenuSeparator />
+          <MenuCheckboxItem isDefaultChecked>Show indicators</MenuCheckboxItem>
+          <MenuSeparator />
+          <MenuGroup>
+            <MenuGroupLabel>Density</MenuGroupLabel>
+            <MenuRadioGroup defaultValue="comfortable">
+              <MenuRadioItem value="compact">Compact</MenuRadioItem>
+              <MenuRadioItem value="comfortable">Comfortable</MenuRadioItem>
+              <MenuRadioItem value="spacious">Spacious</MenuRadioItem>
+            </MenuRadioGroup>
+          </MenuGroup>
+          <MenuSeparator />
+          <MenuSubmenu>
+            <MenuSubmenuTrigger>More actions</MenuSubmenuTrigger>
+            <MenuContent align="start" side="right">
+              <MenuItem>Move left</MenuItem>
+              <MenuItem>Move right</MenuItem>
+              <MenuItem>Close others</MenuItem>
+            </MenuContent>
+          </MenuSubmenu>
+        </MenuContent>
+      </Menu>
+      <Spacer height={64} />
+
       <OTPField length={OTP_LENGTH}>
         {Array.from({ length: OTP_LENGTH }, (_, index) => (
           <OTPFieldInput key={index} />
