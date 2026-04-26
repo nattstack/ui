@@ -12,6 +12,14 @@
 // ===================================================== */
 
 /*
+    Theme text selection colors
+*/
+::selection {
+  background: var(--color-primary-6);
+  color: var(--color-gray-12);
+}
+
+/*
     Global html defaults
     - Prevent automatic text resizing
     - Match native UI to the active color scheme
