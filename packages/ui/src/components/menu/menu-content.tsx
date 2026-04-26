@@ -24,7 +24,6 @@ export interface MenuContentProps
   className?: string
   container?: BaseMenu.Portal.Props["container"]
   keepMounted?: BaseMenu.Portal.Props["keepMounted"]
-  showArrow?: boolean
 }
 
 export function MenuContent(props: MenuContentProps): JSX.Element {
@@ -42,7 +41,6 @@ export function MenuContent(props: MenuContentProps): JSX.Element {
     disableAnchorTracking = undefined,
     keepMounted = undefined,
     positionMethod = undefined,
-    showArrow = false,
     side = "bottom",
     sideOffset = 8,
     sticky = undefined,
@@ -52,7 +50,7 @@ export function MenuContent(props: MenuContentProps): JSX.Element {
   const combinedClassName = getMenuClassName(MENU_CLASS_NAME.CONTENT, customClassName)
 
   return (
-    <BaseMenu.Portal container={container} keepMounted={keepMounted}>
+    <BaseMenu.Portal container={container} data-slot="menu-portal" keepMounted={keepMounted}>
       <BaseMenu.Positioner
         align={align}
         alignOffset={alignOffset}
@@ -62,6 +60,7 @@ export function MenuContent(props: MenuContentProps): JSX.Element {
         collisionAvoidance={collisionAvoidance}
         collisionBoundary={collisionBoundary}
         collisionPadding={collisionPadding}
+        data-slot="menu-positioner"
         disableAnchorTracking={disableAnchorTracking}
         positionMethod={positionMethod}
         side={side}
@@ -69,19 +68,6 @@ export function MenuContent(props: MenuContentProps): JSX.Element {
         sticky={sticky}
       >
         <BaseMenu.Popup className={combinedClassName} data-slot="menu-content" {...rest}>
-          {showArrow && (
-            <BaseMenu.Arrow className={MENU_CLASS_NAME.ARROW}>
-              <svg
-                className={MENU_CLASS_NAME.ARROW_ICON}
-                fill="none"
-                height="6"
-                viewBox="0 0 12 6"
-                width="12"
-              >
-                <path d="M0 6L5.15 0.85C5.62 0.38 6.38 0.38 6.85 0.85L12 6H0Z" />
-              </svg>
-            </BaseMenu.Arrow>
-          )}
           {children}
         </BaseMenu.Popup>
       </BaseMenu.Positioner>
