@@ -4,6 +4,8 @@
 
   --color-bg-primary: var(--color-gray-1);
   --color-bg-secondary: var(--color-gray-2);
+  --color-bg-shell-outer: var(--color-gray-1);
+  --color-bg-shell-inner: var(--color-gray-2);
 
   --color-border: var(--color-gray-4);
   --color-outline: var(--color-primary-9);
@@ -17,6 +19,6 @@
 }
 
 .dark {
-  --color-bg-primary: var(--color-gray-2);
-  --color-bg-secondary: var(--color-gray-1);
+  --color-bg-shell-outer: var(--color-gray-2);
+  --color-bg-shell-inner: var(--color-gray-1);
 }
