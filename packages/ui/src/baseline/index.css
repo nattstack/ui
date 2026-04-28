@@ -45,7 +45,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-bg-shell-outer);
   color: var(--color-text-secondary);
   font-family: var(--font-body);
   font-size: 16px;
