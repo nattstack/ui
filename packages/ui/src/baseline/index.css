@@ -45,7 +45,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
-  background-color: var(--color-bg-secondary);
+  background-color: var(--color-bg-primary);
   color: var(--color-text-secondary);
   font-family: var(--font-body);
   font-size: 16px;
@@ -57,15 +57,6 @@ body {
 */
 body > * {
   isolation: isolate;
-}
-
-/*
-    On small screens, app mode uses the primary surface
-*/
-@media (max-width: 768px) {
-  body[data-is-app="true"] {
-    background-color: var(--color-bg-primary);
-  }
 }
 
 /*
